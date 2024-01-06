@@ -74,7 +74,7 @@ export const LoginFrom = () => {
 			headerLabel='Welcome back'
 			backButtonLabel="Don't have an account?"
 			backButtonHref='/auth/register'
-			showSocial>
+			showSocial={!showTwoFactor}>
 			<Form {...form}>
 				<form className='space-y-6' onSubmit={form.handleSubmit(onSubmit)}>
 					<div className='space-y-4'>
